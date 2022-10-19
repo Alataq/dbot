@@ -13,7 +13,7 @@ const rest = new REST({ version: '10' }).setToken(process.TOKEN);
   try {
     console.log('Started refreshing application (/) commands.');
 
-    await rest.put(Routes.applicationCommands(CLIENT_ID), { body: commands });
+    await rest.put(Routes.applicationCommands("1032370103456641137"), { body: commands });
 
     console.log('Successfully reloaded application (/) commands.');
   } catch (error) {
