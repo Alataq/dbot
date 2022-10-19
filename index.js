@@ -1,4 +1,4 @@
-const TOKEN = process.argv.slice(2)[0]
+const TOKEN = process.argv.slice(2).toJSON()
 console.log(TOKEN)
 const { REST, Routes } = require('discord.js');
 
