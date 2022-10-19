@@ -1,4 +1,4 @@
-modules.export.emmit = (TOKEN) => {
+module.exports.emmit = (TOKEN) => {
 const { REST, Routes } = require('discord.js');
 
 const commands = [
