@@ -1,6 +1,7 @@
 const TOKEN = process.argv[2]
 console.log(TOKEN)
 const commandsEmmiter = require("./commandsEmmiter.js")
+commandsEmmiter.emmit(TOKEN)
 const { Client, GatewayIntentBits } = require('discord.js');
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
