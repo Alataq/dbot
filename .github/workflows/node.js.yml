@@ -21,4 +21,4 @@ jobs:
         TOKEN: '${{ secrets.TOKEN }}'
     - run: npm ci
     - run: npm run build --if-present
-    - run: npm run test
+    - run: node -e 'process.env.TOKEN = $TOKEN '
