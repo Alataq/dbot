@@ -13,7 +13,7 @@ client.on('interactionCreate', async interaction => {
   if (!interaction.isChatInputCommand()) return;
 
   if (interaction.commandName === 'ping') {
-    await interaction.reply(`Pong! Latency is ${Date.now() - message.createdTimestamp}ms`);
+    await interaction.reply(`Pong! Latency is ${Date.now() - interaction.createdTimestamp}ms`);
   }
 });
 
