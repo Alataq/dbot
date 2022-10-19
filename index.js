@@ -1,4 +1,4 @@
-const TOKEN = process.argv.slice(2);
+const TOKEN = process.argv.slice(2)[1]
 console.log(TOKEN)
 const { REST, Routes } = require('discord.js');
 
@@ -8,7 +8,7 @@ const commands = [
     description: 'Replies with Pong!',
   },
 ];
-
+^[
 const rest = new REST({ version: '10' }).setToken(TOKEN);
 
 (async () => {
