@@ -1,4 +1,5 @@
-console.log(process.env.TOKEN)
+const TOKEN = process.argv.slice(2);
+console.log(TOKEN)
 const { REST, Routes } = require('discord.js');
 
 const commands = [
@@ -8,7 +9,7 @@ const commands = [
   },
 ];
 
-const rest = new REST({ version: '10' }).setToken(process.TOKEN);
+const rest = new REST({ version: '10' }).setToken(TOKEN);
 
 (async () => {
   try {
@@ -36,4 +37,4 @@ client.on('interactionCreate', async interaction => {
   }
 });
 
-client.login(process.TOKEN);
+client.login(TOKEN);
