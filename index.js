@@ -1,4 +1,4 @@
-console.log(process.TOKEN)
+console.log(process.env.TOKEN)
 const { REST, Routes } = require('discord.js');
 
 const commands = [
