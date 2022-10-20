@@ -15,6 +15,9 @@ client.on('interactionCreate', async interaction => {
   if (interaction.commandName === 'ping') {
     await interaction.reply(`Pong! Latency is ${Date.now() - interaction.createdTimestamp}ms`);
   }
+  if(interaction.commandName === "info"){
+    interaction.reply("Comming soon!")
+  }
 });
 
 client.login(TOKEN);
